@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlapping Circles</title>
+  <style>
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100px;
+    }
+
+    .circle {
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .circle:first-child {
+      background-color: red;
+      z-index: 1; /* Circle 1 on the bottom */
+    }
+
+    .circle:nth-child(2) {
+      background-color: blue;
+      left: 50%;
+      z-index: 2; /* Circle 2 on top */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+</body>
+</html>
