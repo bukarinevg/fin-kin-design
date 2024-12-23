@@ -10,15 +10,11 @@ body {
   background-color: #fff;
   color: #333;
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-.button, .header__info__text, .section__title, .section__text, .info__card, .body__info__card__text h1 {
-  font-family: 'Inter', sans-serif;
-}
 
-.button {
+
+.button{
   margin: 1rem 0;
   text-decoration: none;
   display: flex;
@@ -36,15 +32,14 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #FFFFFF;
-  -webkit-tap-highlight-color: transparent;
 }
 
-.header {
+.header { 
   background-color: #CBECFF;
   overflow-x: hidden;
 }
 
-.nav__list {
+.nav__list{
   display: flex;
   justify-content: right;
   gap: 20px;
@@ -55,20 +50,21 @@ body {
   margin-right: 1rem;
 }
 
-.nav__link {
+.nav__link{
   text-decoration: none;
   color: #333;
   font-size: 14px;
 }
 
-.selected {
+.selected{
   color: #0962E8;
   background-color: white;
   border-radius: 50%;
   padding: 5px 5px;
 }
 
-.header__image__container {
+.header__image__container
+{
   position: absolute;
   z-index: 2;
   display: flex;
@@ -77,57 +73,58 @@ body {
   /* width: 100%; */
 }
 
-.header__info__text {
+.header__info__text{
   color: #29374E;
 }
 
-.header__circle__container {
+
+.header__circle__container{
   z-index: 1;
   position: relative;
   width: 100%;
 }
 
-.circle {
+.circle{
   margin: 0 auto;
   border-radius: 100%;
   position: relative;
 }
 
-.header__big__circle {
+.header__big__circle{
   z-index: 2;
   border: 60px solid #E0F2FF;
-  left: 32px;
+  left:32px;
 }
 
-.header__small__circle {
+.header__small__circle{
   position: absolute;
   opacity: 0.6;
 }
 
-.header__image__hand__mobile {
+.header__image__hand__mobile{
   position: absolute;
   z-index: 1;
 }
 
-.header__image__phone__mobile {
+.header__image__phone__mobile{
   position: absolute;
   z-index: 2;
 }
 
-.container {
+.container{
   height: 100%;
   width: 100%;
 }
 
-.blue {
+.blue{
   color: #0962E8;
 }
 
-.shadow {
+.shadow{
   box-shadow: 6px 4px 12px 0px #0000000D;
 }
 
-.info__card {
+.info__card{
   background-color: #FFFFFF;
   gap: 0px;
   border-radius: 20px;
@@ -135,14 +132,14 @@ body {
   padding: 0px 17px;
 }
 
-.info__card__icon__image {
+.info__card__icon__image{
   padding: 10px;
   border-radius: 50%;
   background-color: #EFF9FF;
 }
 
 @media screen and (min-width: 845px) {
-  .button {
+  .button{
     width: 199px;
     height: 52px;
     top: 339px;
@@ -159,38 +156,38 @@ body {
     text-decoration-skip-ink: none;
   }
 
-  .header {
+  .header{
     height: 686.81px;
   }
 
   .container {
     max-width: 1024px;
     padding: 0 60px;
-    margin: 0 auto;
+    margin: 0 auto;   
   }
 
-  .header__main__mobile {
+  .header__main__mobile{
     display: none;
   }
 
-  .header__main__desktop {
+  .header__main__desktop{
     width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .header__main__desktop__container {
+  .header__main__desktop__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100% 100%;
     z-index: 2;
   }
 
-  .header__info {
+  .header__info{
     margin-top: 100px;
   }
 
-  .header__info__text {
+  .header__info__text{
     font-family: Inter;
     font-size: 22px;
     font-weight: 400;
@@ -200,43 +197,44 @@ body {
     text-decoration-skip-ink: none;
   }
 
-  .circle {
+  .circle{
     width: 560px;
     height: 563px;
   }
 
-  .header__small__circle {
+  .header__small__circle{
     border: 5px solid #FFFFFF;
     z-index: 3;
     left: -2px;
   }
 
-  .header__big__circle {
+  .header__big__circle{
     border: 80px solid #E0F2FF;
-    left: 32px;
+    left:32px;
   }
+  
 
-  .header__image__hand__mobile {
+  .header__image__hand__mobile{
     scale: 1.45;
     top: 25px;
     left: 95px;
   }
 
-  .header__image__phone__mobile {
+  .header__image__phone__mobile{
     top: 85px;
     left: 185px;
     scale: 1.45;
   }
-
-  .header__main__desktop .info__cards {
+  
+  .header__main__desktop .info__cards{
     position: absolute;
     z-index: 3;
     left: 50%;
     right: 50%;
     top: 600px;
   }
-
-  .info__cards {
+  
+  .info__cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
@@ -244,28 +242,28 @@ body {
     z-index: 5;
   }
 
-  .info__card {
+  .info__card{
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 22.4px;
     text-align: left;
     text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;    
     top: 610px;
     left: 750px;
     gap: 0px;
     opacity: 0px;
-    padding: 1em;
+    padding: 1em ;
+
     display: flex;
     flex-direction: row;
   }
 
-  .main {
+  .main{
     margin-top: 8rem;
   }
-
-  .section__title {
+  .section__title{
     font-family: Inter;
     font-size: 38px;
     font-weight: 500;
@@ -274,10 +272,11 @@ body {
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    
     margin: 2rem 0;
   }
 
-  .section__text {
+  .section__text{
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
@@ -287,34 +286,34 @@ body {
     text-decoration-skip-ink: none;
   }
 
-  .body__info {
+  .body__info{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 2rem;
   }
 
-  .body__info__card {
+  .body__info__card{
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 0 10px ;
     background-color: #E9F6FF;
     border-radius: 20px;
     margin-bottom: 1rem;
   }
 
-  .body__info__card__text {
+  .body__info__card__text{
     font-family: Inter;
     font-size: 14px;
     font-weight: 400;
     line-height: 19.6px;
     text-align: left;
     text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;  
   }
 
-  .body__info__card__text h1 {
+  .body__info__card__text h1{
     font-family: Inter;
     font-size: 20px;
     font-weight: 600;
@@ -322,24 +321,25 @@ body {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+      
   }
 
-  .body__info__card__image__img {
+  .body__info__card__image__img{
     margin-bottom: -0.9em;
-  }
+  } 
 
-  .body__final {
+  .body__final{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: flex-start;
     align-items: flex-start;
   }
 
-  .body__final .section__title {
+  .body__final .section__title{
     text-align: left;
   }
 
-  .body__final .info__cards {
+  .body__final .info__cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -348,7 +348,7 @@ body {
     gap: 10px;
   }
 
-  .body__final .info__cards {
+  .body__final .info__cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -365,7 +365,7 @@ body {
 }
 
 @media screen and (max-width: 845px) {
-  .header {
+  .header{
     height: 963px;
   }
 
@@ -373,12 +373,12 @@ body {
     padding: 0 20px;
   }
 
-  .header__image__block__img {
+  .header__image__block__img{
     width: 100%;
     height: 100%;
-  }
+  } 
 
-  .header__main__mobile {
+  .header__main__mobile{
     margin-top: auto;
     display: flex;
     flex-direction: column;
@@ -386,19 +386,19 @@ body {
     align-items: center;
   }
 
-  .header__main__desktop {
+  .header__main__desktop{
     display: none;
   }
-
-  .header__image {
+  
+  .header__image{
     max-height: 500px;
   }
 
-  .header__info {
+  .header__info{
     width: 100%;
   }
 
-  .header__info__text {
+  .header__info__text{
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
@@ -408,46 +408,45 @@ body {
     text-decoration-skip-ink: none;
   }
 
-  .button {
+  .button{
     width: 100%;
     height: 52px;
   }
-
   .header__big__circle {
-    left: 32px;
+    left:32px;
   }
-
+  
   .header__small__circle {
     left: -2px;
   }
 
-  .header__image__hand__mobile {
+  .header__image__hand__mobile{
     top: -45px;
     left: 15px;
   }
 
-  .header__image__phone__mobile {
+  .header__image__phone__mobile{
     top: 25px;
     left: 110px;
   }
 
-  .header__small__circle {
+  .header__small__circle{
     border: 5px solid #FFFFFF;
     z-index: 3;
     left: -2px;
   }
 
-  .header__big__circle {
+  .header__big__circle{
     border: 60px solid #E0F2FF;
-    left: 32px;
+    left:32px;
   }
 
-  .circle {
+  .circle{
     width: 400px;
     height: 403px;
   }
 
-  .info__cards {
+  .info__cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -456,7 +455,7 @@ body {
     gap: 10px;
   }
 
-  .info__card {
+  .info__card{
     display: flex;
     flex-direction: column;
     font-family: Inter;
@@ -468,12 +467,13 @@ body {
     text-decoration-skip-ink: none;
   }
 
-  .info__card__icon {
+  .info__card__icon{
     position: relative;
     top: -5px;
   }
+  
 
-  .section__title {
+  .section__title{
     font-family: Inter;
     font-size: 24px;
     font-weight: 600;
@@ -485,7 +485,7 @@ body {
     margin: 2rem 0;
   }
 
-  .section__text {
+  .section__text{
     font-family: Inter;
     font-size: 14px;
     font-weight: 500;
@@ -495,17 +495,17 @@ body {
     text-decoration-skip-ink: none;
   }
 
-  .body__info__card {
+  .body__info__card{
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 0 10px ;
     background-color: #E9F6FF;
     border-radius: 20px;
     margin-bottom: 1rem;
   }
 
-  .body__info__card__text {
+  .body__info__card__text{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -516,19 +516,23 @@ body {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+
   }
 
-  .body__info__card__text h1 {
+  .body__info__card__text h1{
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
     line-height: 22.4px;
     text-align: left;
     text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;    
   }
 
-  .body__info__card__image__img {
+  .body__info__card__image__img{
     margin-bottom: -0.9em;
-  }
+  } 
+
+  
+
 }
